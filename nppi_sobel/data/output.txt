@@ -1,0 +1,20 @@
+coder@15c91c4f4841:~/project/cudaAtScaleForTheEnterprise/nppi_sobel$ make clean build
+rm -rf bin/*
+mkdir -p bin
+/usr/local/cuda/bin/nvcc -I../Common -I../Common/UtilNPP   -o bin/sobelNPP.o -c src/sobelNPP.cpp
+/usr/local/cuda/bin/nvcc   -o bin/sobelNPP bin/sobelNPP.o -lnppisu_static -lnppif_static -lnppc_static -lculibos -lfreeimage
+mkdir -p ../../bin///
+cp bin/sobelNPP ../../bin///
+coder@15c91c4f4841:~/project/cudaAtScaleForTheEnterprise/nppi_sobel$ make run
+bin/sobelNPP
+bin/sobelNPP Starting...
+
+GPU Device 0: "Ampere" with compute capability 8.6
+
+NPP Library Version 11.3.3
+  CUDA Driver  Version: 12.6
+  CUDA Runtime Version: 11.3
+  Device 0: <          Ampere >, Compute SM 8.6 detected
+sobelNPP opened: <./data/Lena.pgm> successfully!
+Saved image: ./data/Lena_sobel.pgm
+coder@15c91c4f4841:~/project/cudaAtScaleForTheEnterprise/nppi_sobel$ 
