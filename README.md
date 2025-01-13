@@ -6,6 +6,6 @@ More detail information is provided at nppi_sobel/README.md
 
 ## Code Organization
 
-Common/ This is a copy from [NPP Box Filter lab - 'https://www.coursera.org/learn/cuda-at-scale-for-the-enterprise/ungradedLab/8cJV3/npp-box-filter-laboratory']
+Common/ This is a copy from [NPP Box Filter lab](https://www.coursera.org/learn/cuda-at-scale-for-the-enterprise/ungradedLab/8cJV3/npp-box-filter-laboratory)
 
 nppi_sobel/ Directory for project that demonstrate sobel edge detection project.
