@@ -158,14 +158,14 @@ int main(int argc, char *argv[])
         NppiPoint oSrcOffset = {0, 0};
 
         // create struct with ROI size
-         NppiSize oSizeROI = {(int)oDeviceSrc.width(), (int)oDeviceSrc.height()};
+        NppiSize oSizeROI = {(int)oDeviceSrc.width(), (int)oDeviceSrc.height()};
         // allocate device image
         npp::ImageNPP_8u_C1 oDeviceDst(oSrcSize.width, oSrcSize.height);
 
         // run sobel filter
         NPP_CHECK_NPP(nppiFilterSobelHorizBorder_8u_C1R(
      	   	oDeviceSrc.data(), 1, oSrcSize, oSrcOffset,
-      	   	oDeviceDst.data(), 1, oSizeROI, NPP_BORDER_REPLICATE)));
+      	   	oDeviceDst.data(), 1, oSizeROI, NPP_BORDER_REPLICATE));
 
         // declare a host image for the result
         npp::ImageCPU_8u_C1 oHostDst(oDeviceDst.size());

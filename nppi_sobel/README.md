@@ -1,4 +1,6 @@
-# Independent project - Sobel Filter
+# Sobel Filter
+
+Edge Detection
 
 ## Project Description
 
@@ -8,7 +10,7 @@ The project will demonstrate how to use [Sobel filter - 'https://docs.nvidia.com
 
 src/ Directory to hold source code.
 
-bin/	Directory that holds all binary/executable code that is built automatically or manually. Executable code should have use the .exe extension or programming language-specific extension.
+bin/ Directory that holds all binary/executable code that is built automatically or manually. Executable code should have use the .exe extension or programming language-specific extension.
 
 data/ Directory to hold all example data or image.
 
